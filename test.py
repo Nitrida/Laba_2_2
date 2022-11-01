@@ -1,11 +1,11 @@
 import pytest
-from main import CashCalculator, CaloriesCalculator, Record, Calculator
+import main
+from main import CashCalculator, CaloriesCalculator, Record
 
 def test_record_creation():
-    com="sdfds"
-    test_record = Record(100, 'comment', '31/03/2021')
-    test_record = Record(205, 'comment', '21/04/2022')
-    if len(test_record.comment) == 0:
+    # test_record = Record(100, 'comment', '31/03/2021')
+    # test_record = Record(205, 'comment', '21/04/2022')
+    if len(main.com) == 0:
         print('[Нехватает коментариев]')
 
 
